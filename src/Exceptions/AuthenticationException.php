@@ -1,6 +1,6 @@
 <?php
 
-namespace VendorName\SDK\Exceptions;
+namespace Sammyjo20\Pokeapi\Exceptions;
 
 use Exception;
 

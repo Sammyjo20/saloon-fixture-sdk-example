@@ -1,19 +1,19 @@
 {
-    "name": ":vendor_slug/:package_slug",
-    "description": ":package_description",
+    "name": "sammyjo20/saloon-fixture-saloon-fixture-sdk-example-example",
+    "description": "This is my package saloon-fixture-sdk-example",
     "type": "library",
-    "homepage": "https://github.com/:vendor_slug/:package_slug",
+    "homepage": "https://github.com/sammyjo20/saloon-fixture-saloon-fixture-sdk-example-example",
     "license": "MIT",
     "autoload": {
         "psr-4": {
-            "VendorName\\SDK\\": "src/",
-            "VendorName\\SDK\\Tests\\": "tests/"
+            "Sammyjo20\\Pokeapi\\": "src/",
+            "Sammyjo20\\Pokeapi\\Tests\\": "tests/"
         }
     },
     "authors": [
         {
-            "name": ":author_name",
-            "email": "author@domain.com"
+            "name": "Sammyjo20",
+            "email": "29132017+Sammyjo20@users.noreply.github.com"
         }
     ],
     "minimum-stability": "stable",

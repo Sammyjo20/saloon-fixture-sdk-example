@@ -1,9 +1,9 @@
 <?php
 
-namespace VendorName\SDK\Requests\Example;
+namespace Sammyjo20\Pokeapi\Requests\Example;
 
-use VendorName\SDK\Requests\Request;
 use Sammyjo20\Saloon\Constants\Saloon;
+use Sammyjo20\Pokeapi\Requests\Request;
 
 class ExampleRequest extends Request
 {

@@ -1,6 +1,6 @@
 <?php
 
-namespace VendorName\SDK\Requests;
+namespace Sammyjo20\Pokeapi\Requests;
 
 use Sammyjo20\Saloon\Http\RequestCollection;
 

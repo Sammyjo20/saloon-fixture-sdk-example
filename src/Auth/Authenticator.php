@@ -1,6 +1,6 @@
 <?php
 
-namespace VendorName\SDK\Auth;
+namespace Sammyjo20\Pokeapi\Auth;
 
 use Sammyjo20\Saloon\Http\SaloonRequest;
 use Sammyjo20\Saloon\Interfaces\AuthenticatorInterface;

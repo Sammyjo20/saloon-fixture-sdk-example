@@ -1,16 +1,16 @@
 <?php
 
-namespace VendorName\SDK;
+namespace Sammyjo20\Pokeapi;
 
-use VendorName\SDK\Responses\SDKResponse;
 use Sammyjo20\Saloon\Http\SaloonConnector;
+use Sammyjo20\Pokeapi\Responses\PokeapiResponse;
 use Sammyjo20\Saloon\Traits\Plugins\AcceptsJson;
-use VendorName\SDK\Requests\ExampleRequestCollection;
+use Sammyjo20\Pokeapi\Requests\ExampleRequestCollection;
 
 /**
  * @method ExampleRequestCollection example
  */
-class SDK extends SaloonConnector
+class Pokeapi extends SaloonConnector
 {
     use AcceptsJson;
 
@@ -26,10 +26,10 @@ class SDK extends SaloonConnector
      *
      * @var string|null
      */
-    protected ?string $response = SDKResponse::class;
+    protected ?string $response = PokeapiResponse::class;
 
     /**
-     * The requests/services on the SDK.
+     * The requests/services on the Pokeapi.
      *
      * @var array
      */
