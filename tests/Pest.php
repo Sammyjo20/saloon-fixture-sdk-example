@@ -12,6 +12,9 @@
 */
 
 use Sammyjo20\Pokeapi\Tests\TestCase;
+use Sammyjo20\Saloon\Http\MockResponse;
+use Sammyjo20\Saloon\Clients\MockClient;
+use Sammyjo20\Saloon\Http\SaloonRequest;
 
 uses(TestCase::class)->in('Feature');
 
@@ -40,3 +43,14 @@ expect()->extend('toBeOne', function () {
 | global functions to help you to reduce the number of lines of code in your test files.
 |
 */
+
+function wildcardMockClient()g
+{
+    return new MockClient([
+        '*' => function (SaloonRequest $request) {
+            $reflection = new ReflectionClass($request);
+
+            return MockResponse::fixture($reflection->getShortName());
+        },
+    ]);
+}

@@ -19,13 +19,7 @@ test('gets all pokemon', function () {
 });
 
 test('advanced example', function () {
-    $mockClient = new MockClient([
-        '*' => function (SaloonRequest $request) {
-            $reflection = new ReflectionClass($request);
-
-            return MockResponse::fixture($reflection->getShortName());
-        },
-    ]);
+    $mockClient = wildcardMockClient();
 
     $request = new GetAllPokemonRequest;
     $response = $request->send($mockClient);
