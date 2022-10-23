@@ -44,7 +44,7 @@ expect()->extend('toBeOne', function () {
 |
 */
 
-function wildcardMockClient()g
+function wildcardMockClient()
 {
     return new MockClient([
         '*' => function (SaloonRequest $request) {
