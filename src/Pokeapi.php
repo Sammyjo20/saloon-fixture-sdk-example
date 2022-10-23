@@ -5,11 +5,7 @@ namespace Sammyjo20\Pokeapi;
 use Sammyjo20\Saloon\Http\SaloonConnector;
 use Sammyjo20\Pokeapi\Responses\PokeapiResponse;
 use Sammyjo20\Saloon\Traits\Plugins\AcceptsJson;
-use Sammyjo20\Pokeapi\Requests\ExampleRequestCollection;
 
-/**
- * @method ExampleRequestCollection example
- */
 class Pokeapi extends SaloonConnector
 {
     use AcceptsJson;
@@ -19,7 +15,7 @@ class Pokeapi extends SaloonConnector
      *
      * @var string
      */
-    protected string $apiBaseUrl = ':base_url';
+    protected string $apiBaseUrl = 'https://pokeapi.co/api/v2';
 
     /**
      * Custom response that all requests will return.
@@ -33,9 +29,7 @@ class Pokeapi extends SaloonConnector
      *
      * @var array
      */
-    protected array $requests = [
-        'example' => ExampleRequestCollection::class,
-    ];
+    protected array $requests = [];
 
     /**
      * Define the base URL of the API.

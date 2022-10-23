@@ -1,11 +1,11 @@
 <?php
 
-namespace Sammyjo20\Pokeapi\Requests\Example;
+namespace Sammyjo20\Pokeapi\Requests;
 
 use Sammyjo20\Saloon\Constants\Saloon;
 use Sammyjo20\Pokeapi\Requests\Request;
 
-class ExampleRequest extends Request
+class GetAllPokemonRequest extends Request
 {
     /**
      * Define the method that the request will use.
@@ -19,6 +19,6 @@ class ExampleRequest extends Request
      */
     public function defineEndpoint(): string
     {
-        return '/';
+        return '/pokemon';
     }
 }
