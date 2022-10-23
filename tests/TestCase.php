@@ -12,6 +12,6 @@ class TestCase extends BaseTestCase
         parent::setUp();
 
         MockConfig::setFixturePath('tests/Fixtures/Responses');
-        MockConfig::throwOnMissingFixtures();
+        // MockConfig::throwOnMissingFixtures();
     }
 }
